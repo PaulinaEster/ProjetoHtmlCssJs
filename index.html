@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+        integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <style>
+        .projetos{
+            width: 100%;
+            height:  30rem;
+            background:  url(images/backgroud_projetos.jpg) center no-repeat;
+            background-size: cover;
+        }
+
+        .list-projects{
+            position: absolute;
+            list-style: none;
+            top: 1rem;
+            right: 1rem;
+        }
+
+        .project-item{
+            cursor: pointer;
+            border-radius: 10px;
+            list-style: none;
+            margin: 1.5rem;
+            width: 4.5rem;
+            height: 4rem;
+            box-shadow: 10px 5px 5px black;
+        }
+
+        .item-1{
+            background: url(images/project-item-1.jpg) center no-repeat;
+            background-size: cover;
+        }
+
+        .item-2{
+            background: url(images/project-item-2.jfif) center no-repeat;
+            background-size: cover;
+        }
+
+        .item-3{
+            background: url(images/project-item-3.jpg) center no-repeat;
+            background-size: cover;
+        }
+
+        .project-expandido{
+            margin: auto;
+            background-color: turquoise;
+            max-width: 100%;
+            width: 10rem;
+            height: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Side bar -->
+    <div>
+        <input type="checkbox" name="click" class="checkbox" id="click" hidden>
+        <div class="sidebar">
+            <label for="click">
+                <div class="menu-icon">
+                    <div class="line line-1"></div>
+                    <div class="line line-2"></div>
+                    <div class="line line-3"></div>
+                </div>
+            </label>
+            <div class="nav">
+                <ul class="nav-list">
+                    <li class="nav-list-item">
+                        <a href="#projetos" class="nav-item-link"> Projetos</a>
+                    </li>
+                    <li class="nav-list-item">
+                        <a href="#sobre" class="nav-item-link"> Sobre</a>
+                    </li>
+                    <li class="nav-list-item">
+                        <a href="" class="nav-item-link"> Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Projetos -->
+    <div id="projetos" class="projetos">
+        <div class="project-expandido">
+
+        </div>
+
+        <div class="projects">
+            <ul class="list-projects">
+                <li class="project-item item-1">
+                    <a href="" class="project-item-link"></a>
+                </li>
+                <li class="project-item item-2">
+                    <a href="" class="project-item-link"></a>
+                </li>
+                <li class="project-item item-3">
+                    <a href="" class="project-item-link"></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- Sobre -->
+    <div id="sobre">
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
